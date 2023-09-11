@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "villagerautocycle",
+	"version": "${version}",
+	"name": "Villager Autocycle",
+	"description": "A simple client-side mod to help get the enchanted book trades you want, easier.",
+	"authors": [
+		"_lior"
+	],
+	"contact": {
+		"homepage": "https://underscore.wtf/",
+		"sources": "https://github.com/underscorelior/VillagerAutocycle"
+	},
+	"license": "MIT",
+	"icon": "assets/villager-autocycle/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"wtf.underscore.villagerautocycle.VillagerAutocycle"
+		],
+		"client": [
+			"wtf.underscore.villagerautocycle.VillagerAutocycleClient"
+		],
+		"fabric-datagen": [
+			"wtf.underscore.villagerautocycle.VillagerAutocycleDataGenerator"
+		]
+	},
+	"mixins": [
+		"villager-autocycle.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
